@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дінмұхамед Қонаев — өмірі мен қызметі</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    :root {
+      --bg: #fefefe;
+      --text: #111;
+      --accent: #006699;
+      --card: rgba(255,255,255,0.8);
+    }
+    body.dark {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --accent: #66ccff;
+      --card: rgba(40,40,40,0.8);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background 0.3s, color 0.3s;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Kazakh_ornament_background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      text-align: center;
+      margin: 15px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 25px;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      line-height: 1.7;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 230px;
+      margin: 10px;
+      border-radius: 14px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.07);
+    }
+
+    button {
+      background: white;
+      color: var(--accent);
+      border: 2px solid white;
+      padding: 8px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Дінмұхамед Ахметұлы Қонаев</h1>
+    <button onclick="toggleTheme()">🌙 / ☀️ Тақырыпты ауыстыру</button>
+  </header>
+
+  <nav>
+    <a href="#life">Өмірбаяны</a>
+    <a href="#career">Қызмет жолы</a>
+    <a href="#photos">Фотогалерея</a>
+  </nav>
+
+  <section id="life" class="section">
+    <h2>Өмірбаяны</h2>
+    <p>
+      Дінмұхамед Ахметұлы Қонаев — қазақ халқының аса көрнекті мемлекет және қоғам қайраткері. 
+      Ол 1912 жылы 12 қаңтарда Верный қаласында (қазіргі Алматыда) дүниеге келген. 
+      1936 жылы Мәскеу түсті металл және алтын институтын бітіріп, инженер-металлург мамандығын алған. 
+      Балқаш және Лениногор зауыттарында еңбек жолын бастап, өз ісінің нағыз маманы атанды. 
+    </p>
+    <p>
+      Қонаев ел дамуына ерекше үлес қосқан тұлға. Ол өз халқын шын жүрегімен сүйді, 
+      мәдениет пен ғылымның, білім мен өнердің өркендеуіне зор еңбек сіңірді. 
+      Оның есімі Қазақстан тарихында ел бірлігі мен тұрақтылықтың символы ретінде мәңгі сақталады.
+    </p>
+  </section>
+
+  <section id="career" class="section">
+    <h2>Қызмет жолы</h2>
+    <p>
+      1942 жылдан бастап ол түрлі мемлекеттік қызметтер атқарды. 
+      1955–1962 және 1964–1986 жылдары Қазақстан Коммунистік партиясы Орталық Комитетінің бірінші хатшысы болды.  
+      Бұл жылдары республика экономикасы, ғылымы мен мәдениеті үлкен қарқынмен дамыды. 
+      Қонаевтың бастамасымен жаңа өнеркәсіп орындары, жолдар, тұрғын үйлер мен оқу орындары салынды.  
+    </p>
+    <p>
+      Ол әрдайым қарапайым халықпен етене араласып, жастарды білімге, еңбекке шақырды.  
+      Дінмұхамед Ахметұлының саясатының негізінде әділдік, ел бірлігі мен ұлттар достығы тұрды.  
+      Оның өмірі — елге қызмет етудің айқын үлгісі.
+    </p>
+  </section>
+
+  <section id="photos" class="section">
+    <h2>Фотогалерея</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Kunayev_Dinmukhamed_Ahmedovich.jpg" alt="Д. А. Қонаев портреті">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Almaty_D.A._Kunayev_Museum_01.jpg" alt="Қонаев мұражайы">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Kunayev_statue_Almaty.jpg" alt="Қонаев ескерткіші">
+      <img src=https://avatars.mds.yandex.net/i?id=b2197f7980abdf8c8c9df9a205b3b39f_l-4011528-images-thumbs&n=13alt="Қонаев бейнеленген теңге">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Дінмұхамед Қонаев туралы сайт | Автор: Қазақстан жастары</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
+
